@@ -137,12 +137,11 @@ export default function BugReport() {
     <>
       <div className="sm:py-3 py-5 px-20 sm:px-6 flex justify-between items-center">
         <div className="flex items-center justify-start">
-          <Link to="/">
-            <img
-              src={theme === "dark" ? logo_dark : logo_light}
-              alt="logo"
-              className="me-2 sm:h-[28px] h-[42px]"
-            />
+          <Link to="/" className="flex items-center gap-2">
+            <span className="text-2xl font-black tracking-tight text-sky-500 flex items-center gap-1.5">
+              <span className="bg-sky-500 text-white px-2 py-0.5 rounded text-base font-black">Ro</span>
+              <span className="text-slate-800 dark:text-white">DB</span>
+            </span>
           </Link>
           <div className="ms-4 sm:text-sm xl:text-lg font-semibold">
             Report a bug

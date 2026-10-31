@@ -12,8 +12,11 @@ export default function Navbar() {
     <>
       <div className="py-4 px-12 sm:px-4 flex justify-between items-center">
         <div className="flex items-center justify-between w-full">
-          <Link to="/">
-            <img src={logo} alt="logo" className="h-[48px] sm:h-[32px]" />
+          <Link to="/" className="flex items-center gap-2">
+            <span className="text-2xl font-black tracking-tight text-sky-500 flex items-center gap-1.5">
+              <span className="bg-sky-500 text-white px-2 py-0.5 rounded text-base font-black">Ro</span>
+              <span className="text-slate-800 dark:text-white">DB</span>
+            </span>
           </Link>
           <div className="md:hidden flex gap-12">
             <Link
@@ -95,7 +98,10 @@ export default function Navbar() {
       <hr />
       <SideSheet
         title={
-          <img src={logo} alt="logo" className="sm:h-[32px] md:h-[42px]" />
+          <span className="text-xl font-black tracking-tight text-sky-500 flex items-center gap-1.5">
+            <span className="bg-sky-500 text-white px-2 py-0.5 rounded text-sm font-black">Ro</span>
+            <span>DB</span>
+          </span>
         }
         visible={openMenu}
         onCancel={() => setOpenMenu(false)}

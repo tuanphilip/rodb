@@ -2369,13 +2369,11 @@ export default function ControlPanel({
         style={isRtl(i18n.language) ? { direction: "rtl" } : {}}
       >
         <div className="flex justify-start items-center">
-          <Link to="/">
-            <img
-              width={54}
-              src={icon}
-              alt={t("logo")}
-              className="ms-7 min-w-[54px]"
-            />
+          <Link to="/" className="ms-6 me-2">
+            <span className="text-xl font-black tracking-tight text-sky-500 flex items-center gap-1.5 bg-sky-50 dark:bg-sky-950/50 px-2.5 py-1 rounded-md border border-sky-200 dark:border-sky-800">
+              <span className="bg-sky-500 text-white px-1.5 py-0.5 rounded text-xs font-black">Ro</span>
+              <span className="text-slate-900 dark:text-white">DB</span>
+            </span>
           </Link>
           <div className="ms-1 mt-1">
             <div className="flex items-center ms-3 gap-2">
